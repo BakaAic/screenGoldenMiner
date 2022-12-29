@@ -4,4 +4,4 @@ The tradition Golden Miner is obsoleted, why not play the New Golden Miner with 
 
 work on Windows10 64bit
 
-need PIL
+need PIL,pywin32
