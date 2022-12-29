@@ -1108,7 +1108,7 @@ class Game():
     def DrawBasicPlayer(self):
         self.Board.create_image(self.screen_width/2+24,self.screen_height//4-9,image=self.im,tag='player')
         self.Board.create_rectangle(self.screen_width*3/4-20,self.screen_height//6-50,self.screen_width*3/4+270,self.screen_height//6+60,tag='player',outline='#FEFEFE',width=3)
-        self.Board.create_text(self.screen_width/2+24,self.screen_height//4-90,text='左键出钩↓右键退出',font=('微软雅黑',13),tag='player',fill='#CCCCCC')
+        self.Board.create_text(self.screen_width/2+24,self.screen_height//4-90,text='左键出钩 ↓ 右键退出',font=('微软雅黑',13),tag='player',fill='#CCCCCC')
         self.updateText('得分：0')
 
     
