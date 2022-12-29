@@ -4,6 +4,7 @@ try:
 except:
     import pip
     pip.main(['install', 'pywin32'])
+    pip.main(['install', 'win32gui'])
     import struct, commctrl, win32gui, win32con, win32api
 import platform
 from tkinter import *
