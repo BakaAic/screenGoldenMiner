@@ -61,6 +61,7 @@ class ICONCONTROL:
     
     def getDesktopHandle(self):
         # Get the desktop handle
+        maxTryCount=150
         dthwnd=0
         while True:
             if platform.version().split('.')[0]=='10':
@@ -71,6 +72,10 @@ class ICONCONTROL:
             slvhwnd = win32gui.FindWindowEx(ukhwnd,0, 'SysListView32', None)
             if dthwnd and ukhwnd and slvhwnd:
                 break
+            maxTryCount-=1
+            if maxTryCount==0:
+                print('can not find the desktop handle!')
+                exit()
         return slvhwnd    
         
     def getIconsInfo(self):
