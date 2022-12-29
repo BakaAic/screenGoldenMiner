@@ -1,5 +1,10 @@
 import ctypes
-import struct, commctrl, win32gui, win32con, win32api
+try:
+    import struct, commctrl, win32gui, win32con, win32api
+except:
+    import pip
+    pip.main(['install', 'pywin32'])
+    import struct, commctrl, win32gui, win32con, win32api
 import platform
 from tkinter import *
 from tkinter import messagebox
